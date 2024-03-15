@@ -14,13 +14,13 @@ Data Analysis Table of Contents
 - [Importing Libraries](#importing-libraries-and-read-the-csv-file)
 - [Cleanning Club Column](#1-cleanning-club-column)
 - [Cleanning Contract Column](#2-cleanning-contract-column)
-- [Cleanning Height Column](#3.-cleanning-height-column)
-- [Cleanning Weight Column](#cleanning-weight-column)
-- [Cleanning Loan Date End Column](#cleanning-loan-date-end-column)
-- [Cleanning W/F Column](#cleanning-w/f-column)
-- [Cleanning SM Column](#cleanning-sm-column)
-- [Cleanning Hits Column](#cleanning-hits-column)
-- [Cleaning Value, Wage, Release Clause Column](#cleaning-value-wage-release-clause-column)
+- [Cleanning Height Column](#3-cleanning-height-column)
+- [Cleanning Weight Column](#4-cleanning-weight-column)
+- [Cleanning Loan Date End Column](#5-cleanning-loan-date-end-column)
+- [Cleanning W/F Column](#6-cleanning-w/f-column)
+- [Cleanning SM Column](#7-cleanning-sm-column)
+- [Cleanning Hits Column](#8-cleanning-hits-column)
+- [Cleaning Value, Wage, Release Clause Column](#9-cleaning-value-wage-release-clause-column)
 ### Importing Libraries and Read the csv file
 ```python
 import numpy as np
