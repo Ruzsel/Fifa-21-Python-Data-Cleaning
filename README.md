@@ -10,6 +10,17 @@ This repository contains the code to clean up the FIFA 21 dataset game. The purp
 ## Columns Explanation
 For descriptions of all columns, you can refer to a file named "FIFA21 Column Explanation"
 ## Data Analysis
+Data Analysis Table of Contents
+- [Importing Libraries](#importing-libraries-and-read-the-csv-file)
+- [Cleanning Club Column](#cleanning-club-column)
+- [Cleanning Contract Column](#cleanning-contract-column)
+- [Cleanning Height Column](#cleanning-height-column)
+- [Cleanning Weight Column](#cleanning-weight-column)
+- [Cleanning Loan Date End Column](#cleanning-loan-date-end-column)
+- [Cleanning W/F Column](#cleanning-w/f-column)
+- [Cleanning SM Column](#cleanning-sm-column)
+- [Cleanning Hits Column](#cleanning-hits-column)
+- [Cleaning Value, Wage, Release Clause Column](#cleaning-value-wage-release-clause-column)
 ### Importing Libraries and Read the csv file
 ```python
 import numpy as np
@@ -34,7 +45,7 @@ data.head(5)
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/e86be81b-dd4a-430c-adda-f5550d023a93)
 
-### 1. Cleanning 'Club' Column
+### 1. Cleanning Club Column
 ```python
 data['Club'].dtype
 ```
@@ -49,7 +60,7 @@ data['Club'].unique()
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/1c3de9bf-ee72-413e-960d-65c1f540498e)
 
-### 2. Cleanning 'Contract' Column
+### 2. Cleanning Contract Column
 ```python
 data['Contract'].dtype
 ```
@@ -108,7 +119,7 @@ data[['Contract', 'Contract Start', 'Contract End', 'Contract Length(years)', 'C
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/ebb4c385-a3ce-41d7-b295-d2bb92d089dd)
 
-### 3. Cleanning 'Height' Column
+### 3. Cleanning Height Column
 ```python
 data['Height'].dtype
 ```
@@ -131,14 +142,14 @@ data['Height'].unique()
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/6bba56b6-a030-4448-b4de-d325c998880e)
 
-rename 'Height' Column to 'Height(Cm)'
+rename Height Column to Height(Cm)
 ```python
 data = data.rename(columns={'Height':'Height(Cm)'})
 data.sample(1)
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/e63ccdb0-e107-4819-9bfd-e1db4a715c69)
 
-### 4. Cleanning 'Weight' Column
+### 4. Cleanning Weight Column
 ```python
 data['Weight'].dtype
 ```
@@ -168,7 +179,7 @@ data.sample(7)
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/ad7a44a4-331d-4524-87f4-8dbc33cafc68)
 
-### 5. Cleanning 'Loan Date End' Column
+### 5. Cleanning Loan Date End Column
 ```python
 data['Loan Date End'].dtype
 ```
@@ -185,7 +196,7 @@ player_onloan[['Contract','Contract Status', 'Contract End', 'Loan Date End']]
 
 There are many missing values in the `Loan Date End` column because not all players in this dataset are players in the "On Loan" status. There are 1013 rows of data from players in the "On Loan" status, and I think this column might be useful in the future, so I won't delete it.
 
-### 6. Cleanning 'W/F' Column
+### 6. Cleanning W/F Column
 ```python
 data['W/F'].dtype
 ```
@@ -198,7 +209,7 @@ data['W/F'].unique()
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/45b87b3e-4bf5-4a5c-bc03-a2f9c7e3e966)
 
-### 7. Cleanning 'SM' Column
+### 7. Cleanning SM Column
 ```python
 data['SM'].dtype
 ```
@@ -211,7 +222,7 @@ data['SM'].unique()
 ```
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/7f2a3785-4615-40ca-a476-71dae851d036)
 
-### 8. Cleanning 'Hits' Column
+### 8. Cleanning Hits Column
 ```pyton
 data['Hits'].dtype
 ```
@@ -249,7 +260,7 @@ data['Hits'].unique()
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/9f6a9eb2-f701-4f03-8b19-aac30addd220)
 ![image](https://github.com/Ruzsel/Fifa-21-Python-Data-Cleaning/assets/150054552/43c2b2e8-6b69-4560-bb23-8ebc0d24e9f0)
 
-### 9. Cleaning 'Value', 'Wage', 'Release Clause' Column
+### 9. Cleaning Value, Wage, Release Clause Column
 Since I want to use the 'Value', 'Wage', 'Release Clause' columns as aggregate columns in Power BI, it would be easier if I convert the values of these three columns into integers only value and add the euro denomination in the column names.
 ```python
 def convert_euro_to_number(value):
