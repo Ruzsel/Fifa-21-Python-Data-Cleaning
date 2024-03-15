@@ -12,8 +12,8 @@ For descriptions of all columns, you can refer to a file named "FIFA21 Column Ex
 ## Data Analysis
 Data Analysis Table of Contents
 - [Importing Libraries](#importing-libraries-and-read-the-csv-file)
-- [Cleanning Club Column](#1.-cleanning-club-column)
-- [Cleanning Contract Column](#2.-cleanning-contract-column)
+- [Cleanning Club Column](#1-cleanning-club-column)
+- [Cleanning Contract Column](#2-cleanning-contract-column)
 - [Cleanning Height Column](#3.-cleanning-height-column)
 - [Cleanning Weight Column](#cleanning-weight-column)
 - [Cleanning Loan Date End Column](#cleanning-loan-date-end-column)
