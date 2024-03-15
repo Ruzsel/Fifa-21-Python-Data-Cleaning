@@ -17,7 +17,7 @@ Data Analysis Table of Contents
 - [Cleanning Height Column](#3-cleanning-height-column)
 - [Cleanning Weight Column](#4-cleanning-weight-column)
 - [Cleanning Loan Date End Column](#5-cleanning-loan-date-end-column)
-- [Cleanning W/F Column](#6-cleanning-w/f-column)
+- [Cleanning W/F Column](#6-cleanning-wf-column)
 - [Cleanning SM Column](#7-cleanning-sm-column)
 - [Cleanning Hits Column](#8-cleanning-hits-column)
 - [Cleaning Value, Wage, Release Clause Column](#9-cleaning-value-wage-release-clause-column)
