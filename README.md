@@ -4,6 +4,10 @@ This repository contains the code to clean up the FIFA 21 dataset game. The purp
 ## Issues found in the data
 - Inconsistent value formats : Several columns have inconsistent value formats, which could potentially disrupt operations such as grouping by, filtering, or aggregating.
 - Missing Values : Some columns have missing values that need to be handled differently.
+
+## LinkedIn
+[**Fairuz Mujahid Annabil**](https://www.linkedin.com/in/fairuzmujahidannabil/)
+
 ## Tools Used
 1. Python : used Numpy and Pandas Library for Cleaning
 2. Visual Code Studio : IDE for Data Exploration and Cleaning
